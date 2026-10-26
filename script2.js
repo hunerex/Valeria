@@ -76,21 +76,21 @@ document.addEventListener('DOMContentLoaded', () => {
     tl.to(".intro-text", { opacity: 0, y: -30, duration: 1 }, 0);
     tl.to(".ship-trail", { opacity: 1, height: 200, ease: "power1.in", duration: 1 }, 0);
     
-    // LA NAVE BAJA MÁS: Llega al 68% (por encima de los anillos)
-    tl.to(".ship-container", { top: "68%", ease: "none", duration: 8 }, 0);
+    // LA NAVE BAJA HASTA EL 62% (Posada sobre el planeta)
+    tl.to(".ship-container", { top: "62%", ease: "none", duration: 8 }, 0);
 
-    // CARDS
+    // CARDS (Terminan antes de que el planeta suba)
     tl.to(".card-1", { opacity: 1, duration: 1 }, 1);
     tl.to(".card-1", { opacity: 0, duration: 1 }, 2.5);
     
-    tl.to(".card-2", { opacity: 1, duration: 1 }, 3.5);
-    tl.to(".card-2", { opacity: 0, duration: 1 }, 5);
+    tl.to(".card-2", { opacity: 1, duration: 1 }, 3);
+    tl.to(".card-2", { opacity: 0, duration: 1 }, 4.5);
     
-    tl.to(".card-3", { opacity: 1, duration: 1 }, 6);
-    tl.to(".card-3", { opacity: 0, duration: 1 }, 7.5);
+    tl.to(".card-3", { opacity: 1, duration: 1 }, 5);
+    tl.to(".card-3", { opacity: 0, duration: 1 }, 6.5);
 
-    // EL PLANETA SUBE
-    tl.to(".planet", { y: "0%", ease: "power1.out", duration: 1.5 }, 7);
+    // EL PLANETA SUBE PERO SE DETIENE EN 20% (Debajo de la nave)
+    tl.to(".planet", { y: "20%", ease: "power1.out", duration: 1.5 }, 7);
     
     // ESTELA Y TEXTO FINAL
     tl.to(".ship-trail", { opacity: 0, height: 0, duration: 0.5 }, 8.5);
